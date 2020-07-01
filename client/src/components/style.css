@@ -1,0 +1,37 @@
+.app{
+    padding: 20px;
+  }
+  .form-input{
+    margin: 10px 0px;
+  
+  }
+  .form{
+    width: 50%;
+  }
+  .form-input input, .form-input textarea{
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: .25rem;
+    border: .375rem .75rem;
+    outline: none;
+  
+  }
+  
+  button{
+    background-color:blue;
+    color: azure;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    cursor: pointer;
+  }
+  
+  .blog-post_display{
+    border: 1px solid lightgray;
+    margin: 5px 8px;
+    border-radius: 4px;
+    padding: 18px;
+  
+  }
