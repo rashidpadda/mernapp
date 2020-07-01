@@ -17,7 +17,7 @@ const routes = require('./routes/api')
 // const MONGODB_URL='mongodb+srv://rashid1122334455:rashid1122334455@merndb-znojx.mongodb.net/<dbname>?retryWrites=true&w=majority';
 
 
- mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1/mern_db',{
+ mongoose.connect(process.env.MONGOLAB_GREEN_URI || 'mongodb://127.0.0.1/mern_db',{
      useNewUrlParser: true,
      useUnifiedTopology: true
  })
