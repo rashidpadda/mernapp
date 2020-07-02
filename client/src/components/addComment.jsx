@@ -76,10 +76,10 @@ addFileToState=(fileName)=>{
             <div >
              
               <FileUpload  myfunction={this.addFileToState} />
-              <div className="offset-md-3 col-md-8 container">
+              <div className="container">
                     <input type="text" name="comment" id="" className="form-control" onChange={this.addCommentToState} required/>
                     <Link to='/formData'>
-                        <button type="button " className="mt-3 "  onClick={this.addcommentPost}>Submit</button>
+                        <button type="button " className="form-control "  onClick={this.addcommentPost}>Submit</button>
                     </Link>
                    </div>
              </div>  

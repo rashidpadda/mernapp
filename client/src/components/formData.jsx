@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
-import uploads from '../logo.svg';
+// import uploads from '../logo.svg';
 import './style.css';
 
 
@@ -128,7 +128,11 @@ displayCommentPost = (comments) =>{
 
       <h3>{comment.comment}</h3>
   {/* <img alt="uploaded pic" src={require(`../../../${comment.uploadfile}`)}></img> */}
-  <img src={comment.uploadfile} alt="upload"/>
+  {/* <img src={`../../..${comment.uploadfile}`} alt="upload"/>
+   */}
+   <img src={require(`../../../${comment.uploadfile}`)} alt="uploaded "/>
+
+   {/* <img src={require(`../../..//uploads ${comment.uploadfile}`)} */}
       <div>
   </div>
     
