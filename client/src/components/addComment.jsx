@@ -79,7 +79,7 @@ addFileToState=(fileName)=>{
               <div className="container">
                     <input type="text" name="comment" id="" className="form-control" onChange={this.addCommentToState} required/>
                     <Link to='/formData'>
-                        <button type="button " className="form-control "  onClick={this.addcommentPost}>Submit</button>
+                        <button type="button " className="form-control "  onClick={this.addcommentPost}>Submitt</button>
                     </Link>
                    </div>
              </div>  

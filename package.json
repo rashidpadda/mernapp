@@ -33,5 +33,5 @@
     "parse": "^2.13.0",
     "react-router-dom": "^5.2.0"
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "http://localhost:8081"
 }
