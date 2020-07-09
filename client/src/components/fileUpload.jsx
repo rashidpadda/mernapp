@@ -41,23 +41,14 @@ class FileUpload extends Component {
 }
 
   render() { 
-    return (   <div className="container">
-    <div className="row">
-      <div className="offset-md-3 col-md-8">
-        
-        
-        <div className="form-group files">
-            <h2 className="text-center mb-3">upload your file</h2>
-            <input type="file" name="file" className="form-control" onChange={this.onChangeHandler} />
+    return (   
+        <div className="form-group files container">
+            <h2 className="text-center mb-3 mt-5">upload your file</h2>
+            <input type="file" name="file"  onChange={this.onChangeHandler} />
             {/* {console.log(onChangeHandler)} */}
-            <button type="button" className="btn btn-secondary"  onClick={this.onClickHandler}>upload</button>
+            <button type="button" className="btn btn-secondary btn-sm"  onClick={this.onClickHandler}>upload</button>
         </div>
-    
-     
-      
-     </div>
-  </div>
-  </div>
+
 
 );
 };

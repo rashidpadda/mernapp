@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
-// App.set('view engine', 'ejs');
-import { Accordion } from 'react-bootstrap';
-// const express = require ('express');
-// const App =express();
 // import Hee from './logo.svg'
-
-// import './App.css';
 import {BrowserRouter as Router, Route, Switch,Redirect} from "react-router-dom";
 import pageNotFound from './components/404';
 import AddComments from './components/addComment';

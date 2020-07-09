@@ -127,7 +127,7 @@ displayCommentPost = (comments) =>{
 
       <h3>{comment.comment}</h3>
   {/* <img alt="uploaded pic" src={require(`../../../${comment.uploadfile}`)}></img> */}
-  <img src={comment.uploadfile} alt="upload"/>
+  <img src={comment.uploadfile} style={{width:100, height:100}} alt="upload"/>
    {/* <img src={require(`../../../${comment.uploadfile}`)} alt="uploaded "/> */}
 
    {/* <img src={require(`../../..//uploads ${comment.uploadfile}`)} */}
@@ -189,7 +189,7 @@ displayCommentPost = (comments) =>{
 </Link>
 {/* <img src={} alt=""/>
 < */}
-<uploads />
+{/* <uploads /> */}
 
 <h1 className="text-center">Here are my Comments</h1>
 <div  className="comment-post_display">

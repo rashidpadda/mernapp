@@ -7,7 +7,7 @@ const path = require('path');
 
 
 const app =express();
- const PORT =process.env.PORT || 8080
+const PORT =process.env.PORT || 8080
 const routes = require('./routes/api')
 
 
@@ -28,7 +28,8 @@ mongoose.connection.on('connected', ()=>{
 })
 
 // data parsing
-app.use(express.static('uploads'))
+// app.use(express.static('uploads'))
+app.use("/uploads", express.static(__dirname + "/uploads"));
 app.use(express.json());
 app.use(express.urlencoded({extended:false }));
 
