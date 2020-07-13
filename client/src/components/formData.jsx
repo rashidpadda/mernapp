@@ -7,13 +7,17 @@ import './style.css';
 
 
 class formData extends Component {
-  state = { 
+  constructor(props){
+    super(props);
+
+  this.state = { 
     title:'',
     body:'',
     posts:[],
     comments:[],
     // uploadImage:''
    };
+  }
 
   componentDidMount=()=>{
      this.getBlogPost();
@@ -122,12 +126,17 @@ displayCommentPost = (comments) =>{
   if(!comments.length) return null;
   console.log(comments);
   return comments.map((comment, index)=>(
+    
    
+
     <div key={index} className="comment-post_display">
 
       <h3>{comment.comment}</h3>
   {/* <img alt="uploaded pic" src={require(`../../../${comment.uploadfile}`)}></img> */}
   <img src={comment.uploadfile} style={{width:100, height:100}} alt="upload"/>
+
+ 
+  
    {/* <img src={require(`../../../${comment.uploadfile}`)} alt="uploaded "/> */}
 
    {/* <img src={require(`../../..//uploads ${comment.uploadfile}`)} */}
@@ -194,6 +203,9 @@ displayCommentPost = (comments) =>{
 <h1 className="text-center">Here are my Comments</h1>
 <div  className="comment-post_display">
 {this.displayCommentPost(this.state.comments)}
+{/* {this.state.uploadfile.length} */}
+
+
     {/* {this.displayCommentPost(this.state.comments)} */}
 {/* {this.displayCommentPost(this.state.uploadImage)} */}
    

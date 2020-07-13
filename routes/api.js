@@ -56,16 +56,6 @@ Router.post('/upload',(req,res)=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
 // /*single file upload*/
 // Router.post('/upload', upload.single('file'), function(req, res, next) {
 
@@ -161,6 +151,7 @@ Router.get('/comments',function(req,res){
    
 })
 
+
 Router.post('/comments/save',(req,res)=>{
     
     const comment = req.body;
@@ -182,6 +173,38 @@ Router.post('/comments/save',(req,res)=>{
 })
  
 })
+
+// Router.get('/comments/countImages', function(req,res){
+
+//     comments.find({fileUpload:{$ne: ""} })
+//     .then((count)=>{
+
+//         res.json(count);
+//     })
+//     .catch((error)=>{
+//         console.log(error, "image count is not working");
+//     })
+
+
+// }) 
+
+
+
+Router.get('/comments/countImages', function(req,res){
+
+    comments.count({ uploadfile: { $exists: true, $ne: "" }})
+    .then((data)=>{
+        res.json({
+            imageCount: data
+        });
+    })
+    .catch((error)=>{
+        console.log(error, "image count is not working");
+    })
+
+}) 
+
+
 
 
 
